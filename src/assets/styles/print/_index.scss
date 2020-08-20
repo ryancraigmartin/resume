@@ -1,5 +1,5 @@
 @media print {
-    // GENERAL PRINT RESET
+
 
     @page {
         margin: 1cm 3cm;
@@ -51,6 +51,11 @@
         padding-right: 0;
     }
 
+    .footer_container {
+        // max-height: none !important;
+        height: 100px;
+    }
+
     .header {
         padding: 0 !important;
     }
@@ -64,7 +69,7 @@
     }
 
     .section__title {
-        border-color: #b5b5b5;
+        border-color: $section-border;
     }
 
     .vcard__avatar {

@@ -51,7 +51,7 @@ module.exports = {
             style += `--primary-color:${colors.primary};`
         }
         if (colors.secondary) {
-            style += `--secondary-color:${colors.secondary};`
+            style += `--off-white:${colors.secondary};`
         }
         return style
     }

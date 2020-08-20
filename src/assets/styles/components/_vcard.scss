@@ -4,7 +4,7 @@
     position: relative;
 
     &__content {
-        padding-top: 1rem;
+        padding-top: .5rem;
     }
     &__title {
         display: flex;
@@ -12,37 +12,37 @@
         align-items: baseline;
     }
     &__subtitle {
-        margin-bottom: 1rem;
+        padding: .3rem;
+        font-size: 1.5rem;
     }
     &__avatar {
         width: 11rem;
         height: 11rem;
         flex: 0 0 11rem;
         border-radius: 50%;
-        border: 5px solid #fff;
+        // border-radius: 1rem;
+        // border: 5px solid $secondary-color;
         box-shadow: $box-shadow-elevated;
         margin-right: $spacing-x;
-    }
-    &__pronouns {
-        font-size: 1.125rem;
-        font-family: $font-family-serif;
-        color: $gray;
     }
     &__link {
         display: flex;
         align-items: center;
         margin-right: 1rem;
+        color: black;
 
         @include hover-focus {
             text-decoration: none;
-            
             .vcard__link-text {
+                font-size: 1rem;
+                color: $primary-color;
                 text-decoration: underline;
             }
         }
 
         .icon {
-            margin-right: 0.125em;
+            margin-right: 0.140em;
+            color: $secondary-color;
         }
     }
 
@@ -61,16 +61,16 @@
     }
 
     @include mq(lg) {
-        padding: $spacing-y 0;
+        padding: 1rem 0;
 
         @supports (display: grid) {
             &__avatar {
-                position: fixed;
-                top: calc(#{$spacing-y} + 1rem);
-                right: 75%;
-                transform: translateX(25%);
-                transition: transform 0.2s ease;
-                margin: 0;
+        //         position: fixed;
+        //         top: calc(#{$spacing-y} + 3rem);
+        //         right: 73.5%;
+        //         transform: translateX(25%);
+        //         transition: transform 0.2s ease;
+        //         margin: 0;
 
                 .js-scrolled & {
                     transform: translateX(25%) scale(0.75);

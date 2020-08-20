@@ -1,44 +1,73 @@
 {
-    "name": "Anna Quincey",
-    "occupation": "Front-End Developer",
-    "location": "Vienna, AT",
+    "name": "Ryan Craig Martin",
+    "occupation": "Software / QA Engineer",
+    "location": "Miami, FL",
     "avatar": "avatar.jpg",
-    "pronouns": "she/her",
-    "email": "anna.quincey@gmail.com",
-    "telephone": "+01 23 456 789",
-    "website": "https://annaquincey.dev",
+    "email": "ryan@ryanmartin.io",
+    "telephone": "",
+    "website": "https://ryanmartin.io",
     "skills": [
-        "HTML",
-        "CSS",
-        "Javascript / ES6",
-        "UI Design",
-        "React",
-        "Git"
+        "Node.js",
+        "React with Hooks",
+        "Express.js",
+        "MongoDB",
+        "GraphQL & REST APIs",
+        "Gatsby",
+        "Github & Gitlab",
+        "Jest",
+        "Cypress",
+        "Mocha & Chai",
+        "Cucumber & Gherkin",
+        "Automated E2E & Integration Testing",
+        "JIRA & Asana"
     ],
-    "languages": [
-        {
-            "name": "English",
-            "level": "native"
-        },
-        {
-            "name": "German",
-            "level": "fluent"
-        },
-        {
-            "name": "French",
-            "level": "basic"
+    "languages": {
+        "type": {
+            "spoken": [
+                {
+                    "name": "English",
+                    "level": "Native Speaker"
+                },
+                {
+                    "name": "Spanish",
+                    "level": "Intermediate"
+                }
+            ],
+            "programming": [
+                {
+                    "name": "HTML5"
+                },
+                {
+                    "name": "CSS3 & SCSS"
+                },
+                {
+                    "name": "Javascript / ES6+"
+                },
+                {
+                    "name": "TypeScript"
+                },
+                {
+                    "name": "Golang"
+                }
+            ]
         }
-    ],
+    },
+
     "social": [
         {
             "name": "Github",
-            "user": "@annaquincey",
-            "url": "https://github.com/annaquincey"
+            "user": "@ryancraigmartin",
+            "url": "https://github.com/ryancraigmartin/"
         },
         {
             "name": "LinkedIn",
-            "user": "AnnaQncy",
-            "url": "https://www.linkedin.com/in/annaquincey"
+            "user": "/in/ryancraigmartin",
+            "url": "https://linkedin.com/in/ryancraigmartin/"
+        },
+        {
+            "name": "Twitter",
+            "user": "@ryancraigmartin",
+            "url": "https://twitter.com/ryancraigmartin/"
         }
     ]
 }

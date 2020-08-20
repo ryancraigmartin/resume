@@ -82,7 +82,7 @@ body {
 
     color: $text-color;
     color: var(--text-color, $text-color);
-    background-color: $bg-color;
+    background-color: $white;
 
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -236,10 +236,10 @@ input[type='search'] {
 ::selection {
     background: $primary-color;
     background: var(--primary-color, $primary-color);
-    color: #fff;
+    color: $white;
 }
 ::-moz-selection {
     background: $primary-color;
     background: var(--primary-color, $primary-color);
-    color: #fff;
+    color: $white;
 }

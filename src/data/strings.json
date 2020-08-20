@@ -1,15 +1,16 @@
 {
     "titles": {
-        "experience": "Work Experience",
+        "experience": "Experience",
         "education": "Education",
-        "skills": "Skills",
-        "languages": "Languages"
+        "skills": "Skills and Tools",
+        "spokenLanguages": "Languages",
+        "programmingLanguages": "Programming Languages"
     },
     "labels": {
         "email": "Email",
-        "telephone": "Telephone",
+        "telephone": "Phone",
         "print": "Print Résumé",
         "present": "Present",
-        "lastUpdated": "Last updated"
+        "lastUpdated": "Last Updated"
     }
 }

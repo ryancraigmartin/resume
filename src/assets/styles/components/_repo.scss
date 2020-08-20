@@ -20,7 +20,7 @@
             right: 0;
             transform-origin: 50% 50%;
             transform: rotate(45deg) translateY(-20px);
-            color: #fff;
+            color: $white;
         }
 
         &::before {
@@ -30,7 +30,7 @@
             height: 0;
             border-style: solid;
             border-width: 0 120px 120px 0;
-            border-color: transparent #000000 transparent transparent;
+            section-border: transparent #000000 transparent transparent;
             position: absolute;
             top: 0;
             right: 0;

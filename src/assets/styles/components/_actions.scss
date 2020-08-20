@@ -10,11 +10,13 @@
         width: 3rem;
         height: 3rem;
         margin: 1rem;
-        background-color: transparent;
+        background-color: #354F52;
         border-radius: 50%;
-        color: #fff;
+        color: $white;
 
         @include hover-focus {
+            transform: scale(1.1);
+            transition: all .432s ease;
             background-color: rgba(0, 0, 0, 0.25);
         }
     }
@@ -23,8 +25,8 @@
         display: none;
         flex-direction: column;
         position: fixed;
-        top: 220px;
-        right: 75%;
+        top: 250px;
+        left: .35%;
         padding: 0 0.5rem;
         text-align: right;
 

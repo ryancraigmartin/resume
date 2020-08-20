@@ -5,8 +5,8 @@
 a:focus,
 button:focus,
 input:focus {
-    outline: 5px solid $secondary-color;
-    outline: 5px solid var(--secondary-color, $secondary-color);
+    outline: 5px solid $off-white;
+    outline: 5px solid var(--off-white, $off-white);
 }
 
 // =================

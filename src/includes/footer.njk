@@ -1,9 +1,9 @@
 <footer class="footer">
-    <div class="container utl-space-between">
-        <p>&copy; {{ author.name }}</p>
-        <p>{{ strings.labels.lastUpdated }}: {{ build.timestamp | dateToFormat('dd.MM.yyyy') }}</p>
+    <div class="container footer_container utl-space-between">
+        <a href='https://ryanmartin.io'><p>&copy; {{ author.name }}</p></a>
+        <p>{{ strings.labels.lastUpdated }}: {{ build.timestamp | dateToFormat('DDDD') }}</p>
         {% if build.demo %}
-            <a href="https://github.com/maxboeck/resume" class="repo-link utl-screen-only">
+            <a href="https://github.com/ryancraigmartin/resume" class="repo-link utl-screen-only">
                 <span>{% icon "github" %} view source</span>
             </a>
         {% endif%}

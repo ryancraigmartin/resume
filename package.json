@@ -1,7 +1,7 @@
 {
   "name": "resume",
   "version": "1.0.0",
-  "description": "An online resume",
+  "description": "Ryan Craig Martin's online resume",
   "scripts": {
     "start": "npm run dev",
     "dev": "run-s clean eleventy:dev",
@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxboeck/resume"
+    "url": "https://github.com/ryancraigmartin/resume"
   },
-  "author": "Max Böck",
+  "author": "Ryan Craig Martin",
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",

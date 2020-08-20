@@ -1,5 +1,5 @@
 .section {
-    padding-top: $spacing-y;
+    padding-top: $spacing-y - 100;
     padding-bottom: $spacing-y;
     page-break-inside: avoid;
 
@@ -7,6 +7,14 @@
         margin-bottom: $spacing-y;
         padding-bottom: 0.5rem;
         border-bottom: 1px solid $gray;
+    }
+
+    &__skills {
+        display: flex;
+        max-height: 400px;
+        max-width: 400px;
+        padding-left: $spacing-y - 100;
+        padding-right: $spacing-y - 100;
     }
 }
 
