@@ -1,27 +1,19 @@
-$container-max-width: 1200px;
-
 // Grayscale.
 $gray: #b5b5b5;
 $ash-gray: #CAD2C5;
-$gray-light: #eceeef;
-$gray-dark: #55595c;
-$gray-darkest: #373a3c;
+$gray-dark: #373a3c;
 
 // Theme Colors
 $primary-color: #84A98C;
 $secondary-color: #354F52;
-$text: $gray-darkest;
+$text: $gray-dark;
 $link: #54785C;
-
-// Misc
 $off-white: #E7E9DE;
 $white: #fff;
+$black: #000;
 
 // Typography
-
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 $font-family-serif: 'Butler', Georgia, Times, serif;
 $font-family-base: $font-family-sans-serif;
 $font-size-root: 100%;
@@ -29,7 +21,6 @@ $font-size-base: 1rem;
 $line-height: 1.625;
 
 // Animation: default easing curves, transitions, etc
-
 $animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1);
 $animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1);
 $animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1);
@@ -39,3 +30,5 @@ $animation-curve-default: $animation-curve-fast-out-slow-in;
 $spacing-x: 2rem;
 $spacing-y: 2rem;
 $box-shadow-elevated: 8px 8px 40px -10px rgba(0, 0, 0, 0.3);
+
+$container-max-width: 1050px;

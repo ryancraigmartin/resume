@@ -1,4 +1,4 @@
-// Main Site Layout
+// Main Layout
 
 body {
     overflow-x: hidden;
@@ -13,23 +13,31 @@ body {
         grid-area: header;
         padding: $spacing-y, 0, 1rem, 0;
     }
+
     .main {
-        left: 50%;
+        position: revert;
     }
+
     .sidebar {
         grid-area: sidebar;
         background-color: $primary-color;
+        min-width: 96px;
     }
+
     .footer {
         grid-area: footer;
-        padding: $spacing-y, 0;
-        background-color: $gray-light;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        background-color: $primary-color;
     }
 
     @include mq(lg) {
         display: grid;
         grid-template-columns: 5% 1fr;
-        grid-template-rows: auto 1fr auto;
+        grid-template-rows: 5% 1fr auto;
         grid-template-areas:
             'sidebar header'
             'sidebar main'
@@ -38,14 +46,12 @@ body {
 }
 
 .container {
-    padding-left: 5%;
-    // padding-right: 5%;
+    padding-left: 7%;
     max-width: $container-max-width;
 
-    @include mq(lg) {
-        // padding-left: 10%;
-        // padding-right: 10%;
-    }
+    // @include mq(sm) {
+    //     padding-right: 7%;
+    // }
 }
 
 .grid {

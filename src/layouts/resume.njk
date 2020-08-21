@@ -7,7 +7,7 @@ layout: base
         {% if collections.introduction.length %}
             {% set intro = collections.introduction|first %}
             <section class="section" id="section-introduction">
-                <h2 class="section__title">{{ intro.data.title }}</h2>
+                <h2 class="section__title">{{ strings.titles.about }}</h2>
                 <div class="lead">
                     {{ intro.templateContent | safe }}
                 </div>

@@ -4,16 +4,14 @@ document.documentElement.classList.remove('no-js')
 
 // Scroll State
 const onScroll = () => {
+    const scrollThreshold = 150
     const scrollClassName = 'js-scrolled'
-    const scrollThreshold = 200
     const isOverThreshold = window.scrollY > scrollThreshold
-
-    if (isOverThreshold) {
-        document.documentElement.classList.add(scrollClassName)
-    } else {
-        document.documentElement.classList.remove(scrollClassName)
-    }
+    isOverThreshold
+        ? document.documentElement.classList.add(scrollClassName)
+        : document.documentElement.classList.remove(scrollClassName)
 }
+
 window.addEventListener('scroll', onScroll, { passive: true })
 
 // Print Button

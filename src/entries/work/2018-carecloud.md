@@ -14,8 +14,8 @@ end: 2019-09-01
 * Wrote automated, end to end test suites for behavior-driven development using CircleCi, Selenium, WebDriverIO, Cucumber, Gherkin, Mocha, and Chai for .
 
 ```
-  - Scrum and Kanban using Atlassian Jira
-  - Team Communication and Collaboration using Slack
-  - Google Hangouts
-  - VSCode Live Share and GitHub for repository storage, code reviews, and CI/CD integration with Circle Ci.
+  - Atlassian Jira for Scrum and Kanban
+  - VSCode Live Share for collaboration on code.
+  - Slack / Google Hangouts for Team Communication and Collaboration
+  - GitHub for repository storage, code reviews, and CI/CD integration with Circle Ci.
 ```

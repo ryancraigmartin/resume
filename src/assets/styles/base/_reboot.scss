@@ -234,12 +234,12 @@ input[type='search'] {
 }
 
 ::selection {
-    background: $primary-color;
-    background: var(--primary-color, $primary-color);
+    background: $secondary-color;
+    background: var(--sec$secondary-color, $secondary-color);
     color: $white;
 }
 ::-moz-selection {
-    background: $primary-color;
-    background: var(--primary-color, $primary-color);
+    background: $secondary-color;
+    background: var(--sec$secondary-color, $secondary-color);
     color: $white;
 }

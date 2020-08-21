@@ -1,12 +1,10 @@
 @media print {
-
-
     @page {
         margin: 1cm 3cm;
     }
 
     :root {
-        --text: #000000;
+        --text-color: $black;
     }
 
     html,
@@ -51,18 +49,13 @@
         padding-right: 0;
     }
 
-    .footer_container {
-        // max-height: none !important;
-        height: 100px;
-    }
-
     .header {
         padding: 0 !important;
     }
 
-    // .sidebar {
-    //     display: none !important;
-    // }
+    .sidebar {
+        display: none !important;
+    }
 
     .footer {
         background: transparent !important;

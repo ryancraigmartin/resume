@@ -9,16 +9,16 @@ end: 2018-03-15
 * Provided onsite and remote technical support for incoming tickets to the Technology Services Department related to hardware and software used by City of Pembroke Pines employees across various departments including but not limited to:
 
 ```
-  - Fire & Police
-  - Utilities & Public Works
-  - Parks & Recreation
-  - Human Resources
-  - Transportation Authority
   - Finances
+  - Fire & Police
+  - Human Resources
+  - Planning & Zoning
+  - Parks & Recreation
   - Media & Production
-  - Planning & Zoning,
-  - Building, and Event Management
   - City Administration
+  - Utilities & Public Works
+  - Transportation Authority
+  - Building & Event Management
 ```
 
 * Managed and organized the indoor and outdoor video surveillance and card access infrastructure for the City of Pembroke Pines City Center using Identiv Connected Physical Access Manager (ICPAM) and Cisco Video Surveillance Operations Manager (VSOM).

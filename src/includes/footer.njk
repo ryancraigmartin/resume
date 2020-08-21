@@ -1,11 +1,8 @@
 <footer class="footer">
-    <div class="container footer_container utl-space-between">
-        <a href='https://ryanmartin.io'><p>&copy; {{ author.name }}</p></a>
-        <p>{{ strings.labels.lastUpdated }}: {{ build.timestamp | dateToFormat('DDDD') }}</p>
-        {% if build.demo %}
-            <a href="https://github.com/ryancraigmartin/resume" class="repo-link utl-screen-only">
-                <span>{% icon "github" %} view source</span>
-            </a>
-        {% endif%}
-    </div>
+        <a href='https://ryanmartin.io'>
+            <p>&copy; {{ author.name }}</p>
+        </a>
+        <p>
+            Last updated on {{ build.timestamp | dateToFormat('DDDD') }}
+        </p>
 </footer>

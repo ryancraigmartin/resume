@@ -4,8 +4,6 @@ const sass = require('node-sass')
 const CleanCSS = require('clean-css')
 const cssesc = require('cssesc')
 const isProd = process.env.ELEVENTY_ENV === 'production'
-
-// main entry point name
 const ENTRY_FILE_NAME = 'main.scss'
 
 module.exports = class {

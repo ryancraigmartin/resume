@@ -1,12 +1,15 @@
 ---
 tags: custom
-title: Contact
+title: Contact 📬
 ---
 <div style="text-align: center;">
 
-### I am currently looking for my next opportunity!
+## I am currently looking for my next opportunity!
+
 &ensp;
-#### Send ✉️&nbsp;to <ryan@ryanmartin.io> or schedule a time for us to chat on my calendar.
+
+#### Send ✉️ to <ryan@ryanmartin.io> or schedule a time for us to chat on my calendar 📆
+
   <div>
       <div
         class="calendly-inline-widget"
