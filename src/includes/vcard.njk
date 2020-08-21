@@ -1,4 +1,4 @@
-<div class="vcard h-card">
+<div class="vcard">
     {% if author.avatar %}
         {%- set avatarUrl -%}/assets/images/{{ author.avatar }}{% endset %}
         <img class="vcard__avatar" src="{{ avatarUrl | base64file }}" width="350" height="350" alt="{{ author.name }}" />

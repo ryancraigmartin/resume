@@ -15,7 +15,7 @@ body {
     }
 
     .main {
-        position: revert;
+        position: relative;
     }
 
     .sidebar {
@@ -47,7 +47,13 @@ body {
 
 .container {
     padding-left: 7%;
+    padding-right: 7%;
     max-width: $container-max-width;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 
     // @include mq(sm) {
     //     padding-right: 7%;
