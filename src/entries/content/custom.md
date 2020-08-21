@@ -6,7 +6,7 @@ title: Contact
 
 ### I am currently looking for my next opportunity!
 &ensp;
-#### Send an ✉️&nbsp;to <ryan@ryanmartin.io> or schedule a time for us to chat on my calendar.
+#### Send ✉️&nbsp;to <ryan@ryanmartin.io> or schedule a time for us to chat on my calendar.
   <div>
       <div
         class="calendly-inline-widget"

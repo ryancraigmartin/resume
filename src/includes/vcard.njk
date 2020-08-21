@@ -14,19 +14,19 @@
 
         <div class="vcard__contact p-contact">
             {% if author.email %}
-                <a class="vcard__link u-email" aria-label="Email" href="mailto:{{ author.email | obfuscate | safe }}">
+                <a class="vcard__link" aria-label="Email" href="mailto:{{ author.email | obfuscate | safe }}">
                     {% icon "email" %}
                     <span class="vcard__link-text">{{ author.email | obfuscate | safe }}</span>
                 </a>
             {% endif %}
             {% if author.telephone %}
-                <a class="vcard__link p-tel" aria-label="Telephone" href="tel:{{ author.telephone | stripSpaces }}">
+                <a class="vcard__link" aria-label="Telephone" href="tel:{{ author.telephone | stripSpaces }}">
                     {% icon "telephone" %}
                     <span class="vcard__link-text">{{ author.telephone }}</span>
                 </a>
             {% endif %}
             {% if author.website %}
-                <a class="vcard__link u-url" aria-label="Website" href="{{ author.website }}">
+                <a class="vcard__link" aria-label="Website" href="{{ author.website }}">
                     {% icon "laptop" %}
                     <span class="vcard__link-text">{{ author.website | stripProtocol }}</span>
                 </a>

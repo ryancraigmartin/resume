@@ -1,17 +1,7 @@
-// Grid breakpoints:
-// Define the minimum and maximum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
-
-$breakpoints: (
-    md: 670px,
-    lg: 940px,
-    xl: 1260px
-    );
-
 $container-max-width: 1200px;
 
 // Grayscale.
-$gray: #818a91;
+$gray: #b5b5b5;
 $ash-gray: #CAD2C5;
 $gray-light: #eceeef;
 $gray-dark: #55595c;
@@ -20,12 +10,12 @@ $gray-darkest: #373a3c;
 // Theme Colors
 $primary-color: #84A98C;
 $secondary-color: #354F52;
-$text-color: $gray-darkest;
-$off-white: #E7E9DE;
-$white: #fff;
+$text: $gray-darkest;
+$link: #54785C;
 
 // Misc
-$section-border: #b5b5b5;
+$off-white: #E7E9DE;
+$white: #fff;
 
 // Typography
 

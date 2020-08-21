@@ -20,8 +20,6 @@
         height: 11rem;
         flex: 0 0 11rem;
         border-radius: 50%;
-        // border-radius: 1rem;
-        // border: 5px solid $secondary-color;
         box-shadow: $box-shadow-elevated;
         margin-right: $spacing-x;
     }
@@ -29,13 +27,13 @@
         display: flex;
         align-items: center;
         margin-right: 1rem;
-        color: black;
+        color: $secondary-color;
 
         @include hover-focus {
             text-decoration: none;
             .vcard__link-text {
                 font-size: 1rem;
-                color: $primary-color;
+                color: $ash-gray;
                 text-decoration: underline;
             }
         }
@@ -52,7 +50,7 @@
             flex-wrap: wrap;
 
             .vcard__link {
-                margin-bottom: 0.4em; // compensate line-height
+                margin-bottom: 0.4em;
             }
         }
         &__link {
@@ -65,15 +63,13 @@
 
         @supports (display: grid) {
             &__avatar {
-        //         position: fixed;
-        //         top: calc(#{$spacing-y} + 3rem);
-        //         right: 73.5%;
-        //         transform: translateX(25%);
-        //         transition: transform 0.2s ease;
-        //         margin: 0;
-
                 .js-scrolled & {
-                    transform: translateX(25%) scale(0.75);
+                    margin: 0;
+                    right: 95% ;
+                    position: fixed;
+                    top: 2rem;
+                    transform: translateX(50%) scale(1);
+                    transition: transform 0.3s ease;
                 }
             }
         }

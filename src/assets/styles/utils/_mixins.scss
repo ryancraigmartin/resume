@@ -2,8 +2,18 @@
 // SCSS MIXINS
 //--------------------
 
+// Grid breakpoints:
+// Define the minimum and maximum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$breakpoints: (
+    sm: 544px,
+    md: 670px,
+    lg: 940px,
+    xl: 1260px
+);
+
 /// Creates media query for breakpoint and bigger
-///
 /// @param {string} $name - The name of the breakpoint
 /// @param {boolean} $print [false] - If the styles should also apply in print
 @mixin mq($name, $print: false) {
@@ -18,7 +28,6 @@
 }
 
 /// Creates media query for smaller than breakpoint
-///
 /// @param {string} $name - The name of the breakpoint
 /// @param {boolean} $print [false] - If the styles should also apply in print
 @mixin mq-down($name, $print: false) {
@@ -85,5 +94,4 @@
     border: 0;
     padding: 0;
     background-color: transparent;
-    -webkit-appearance: none;
 }

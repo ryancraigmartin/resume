@@ -14,12 +14,11 @@ body {
         padding: $spacing-y, 0, 1rem, 0;
     }
     .main {
-        grid-area: main;
+        left: 50%;
     }
     .sidebar {
         grid-area: sidebar;
         background-color: $primary-color;
-        background-color: var(--primary-color, $primary-color);
     }
     .footer {
         grid-area: footer;
@@ -40,12 +39,12 @@ body {
 
 .container {
     padding-left: 5%;
-    padding-right: 5%;
+    // padding-right: 5%;
     max-width: $container-max-width;
 
     @include mq(lg) {
-        padding-left: 7%;
-        padding-right: 7%;
+        // padding-left: 10%;
+        // padding-right: 10%;
     }
 }
 

@@ -2,7 +2,6 @@ const fs = require('fs')
 const path = require('path')
 const webpack = require('webpack')
 const MemoryFileSystem = require('memory-fs')
-
 const isProd = process.env.ELEVENTY_ENV === 'production'
 const mfs = new MemoryFileSystem()
 

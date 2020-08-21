@@ -6,7 +6,7 @@
     }
 
     :root {
-        --text-color: #000000;
+        --text: #000000;
     }
 
     html,
@@ -60,16 +60,16 @@
         padding: 0 !important;
     }
 
-    .sidebar {
-        display: none !important;
-    }
+    // .sidebar {
+    //     display: none !important;
+    // }
 
     .footer {
         background: transparent !important;
     }
 
     .section__title {
-        border-color: $section-border;
+        border-color: $gray;
     }
 
     .vcard__avatar {
