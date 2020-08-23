@@ -1,8 +1,8 @@
 // Main Layout
 
-body {
-    overflow-x: hidden;
-}
+// body {
+//     overflow-x: auto;
+// }
 
 .layout {
     min-height: 100%;
@@ -18,8 +18,14 @@ body {
         position: relative;
     }
 
-    .sidebar {
+    .l-sidebar {
         grid-area: sidebar;
+        background-color: $primary-color;
+        min-width: 96px;
+    }
+
+    .r-sidebar {
+        grid-area: r-sidebar;
         background-color: $primary-color;
         min-width: 96px;
     }
@@ -36,27 +42,36 @@ body {
 
     @include mq(lg) {
         display: grid;
-        grid-template-columns: 5% 1fr;
+        // grid-template-columns: 5% 1fr;
+        grid-template-columns: auto 1fr;
         grid-template-rows: 5% 1fr auto;
         grid-template-areas:
-            'sidebar header'
-            'sidebar main'
-            'sidebar footer';
+            'sidebar header r-sidebar'
+            'sidebar main r-sidebar'
+            'sidebar footer r-sidebar';
     }
 }
 
 .container {
     padding-left: 7%;
     padding-right: 7%;
-    max-width: $container-max-width;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 
-    // @include mq(sm) {
-    //     padding-right: 7%;
+    @include mq(lg) {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        max-width: $container-max-width;
+    }
+
+    // @include mq(lg) {
+    //     position: fixed;
+    //     top: 50%;
+    //     left: 50%;
+    //     -webkit-transform: translate(-50%, -50%);
+    //     transform: translate(-50%, -50%);
+    //     max-width: $container-max-width;
     // }
 }
 
