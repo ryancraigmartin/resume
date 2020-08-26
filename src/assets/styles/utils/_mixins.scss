@@ -7,9 +7,10 @@
 // adapting to different screen sizes, for use in media queries.
 
 $breakpoints: (
-    sm: 544px,
+    sm: 375px,
+    smd: 412px,
     md: 670px,
-    lg: 940px,
+    lg: 960px,
     xl: 1260px
 );
 

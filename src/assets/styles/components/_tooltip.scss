@@ -1,5 +1,3 @@
-// ToolTip
-
 .has-tooltip {
     &[aria-label] {
         position: relative;
@@ -21,6 +19,12 @@
             opacity: 0;
             transition: all .432s ease;
             pointer-events: none;
+
+            @include mq-down(lg) {
+                left: $spacing-x - ($spacing-x * 1.5);
+                top: $spacing-x * 2;
+                padding: 0.6rem 0.6rem;
+            }
         }
 
         &:hover::after {

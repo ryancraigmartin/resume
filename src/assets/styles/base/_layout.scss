@@ -1,13 +1,16 @@
-// Main Layout
-
-// body {
-//     overflow-x: auto;
-// }
+body {
+    overflow-x: visible !important;
+    min-height: 100%;
+}
 
 .layout {
-    min-height: 100%;
-    min-height: 100vh;
+    // min-height: 100%;
     position: relative;
+
+    @include mq-down(xl) {
+        align-content: center;
+        justify-content: center;
+    }
 
     .header {
         grid-area: header;
@@ -21,13 +24,19 @@
     .l-sidebar {
         grid-area: sidebar;
         background-color: $primary-color;
-        min-width: 96px;
+        min-width: 100px;
+        @include mq-down(lg) {
+            min-width: 250px;
+        }
     }
 
     .r-sidebar {
         grid-area: r-sidebar;
         background-color: $primary-color;
-        min-width: 96px;
+        min-width: 100px;
+        @include mq-down(lg) {
+            min-width: 250px;
+        }
     }
 
     .footer {
@@ -38,11 +47,13 @@
         padding-top: 35px;
         padding-bottom: 35px;
         background-color: $primary-color;
+        a {
+            color: $gray-dark;
+        }
     }
 
     @include mq(lg) {
         display: grid;
-        // grid-template-columns: 5% 1fr;
         grid-template-columns: auto 1fr;
         grid-template-rows: 5% 1fr auto;
         grid-template-areas:
@@ -53,11 +64,10 @@
 }
 
 .container {
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
 
-    @include mq(lg) {
-        position: fixed;
+    @include mq(xl) {
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
@@ -65,13 +75,12 @@
         max-width: $container-max-width;
     }
 
-    // @include mq(lg) {
-    //     position: fixed;
-    //     top: 50%;
+    // @include mq-down(lg) {
+    //     // top: 50%;
     //     left: 50%;
     //     -webkit-transform: translate(-50%, -50%);
     //     transform: translate(-50%, -50%);
-    //     max-width: $container-max-width;
+    //     max-width: $container-max-width - 300;
     // }
 }
 

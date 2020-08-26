@@ -6,11 +6,5 @@
         "skills": "Skills and Tools 🛠️",
         "spokenLanguages": "Languages 🗣️",
         "programmingLanguages": "Programming Languages 💻"
-    },
-    "labels": {
-        "email": "Email",
-        "telephone": "Phone",
-        "print": "Print Résumé",
-        "present": "Present"
     }
 }

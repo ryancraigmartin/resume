@@ -7,7 +7,7 @@ layout: base
         {% if collections.introduction.length %}
             {% set intro = collections.introduction|first %}
             <section class="section" id="section-introduction">
-                <h2 class="section__title">{{ strings.titles.about }}</h2>
+                <h2 class="section__title">{{ sections.about }}</h2>
                 <div class="lead">
                     {{ intro.templateContent | safe }}
                 </div>
@@ -15,14 +15,14 @@ layout: base
         {% endif %}
 
         <section class="section" id="section-experience">
-            <h2 class="section__title">{{ strings.titles.experience }}</h2>
+            <h2 class="section__title">{{ sections.experience }}</h2>
             {% set entries = collections.work %}
             {% set microformat = "p-experience" %}
             {% include "entrylist.njk" %}
         </section>
 
         <section class="section" id="section-education">
-            <h2 class="section__title">{{ strings.titles.education }}</h2>
+            <h2 class="section__title">{{ sections.education }}</h2>
             {% set entries = collections.education %}
             {% set microformat = "p-education" %}
             {% include "entrylist.njk" %}
@@ -32,7 +32,7 @@ layout: base
         <div class="grid grid--2col">
             {% if author.skills %}
             <section class="section section--half" id="section-skills">
-                <h2 class="section__title">{{ strings.titles.skills }}</h2>
+                <h2 class="section__title">{{ sections.skills }}</h2>
                     <div class="section__skills">
                         <ul class="bulletlist">
                             {% for skill in author.skills %}
@@ -47,7 +47,7 @@ layout: base
 
             {% if author.languages %}
             <section class="section section--half" id="section-languages">
-                <h2 class="section__title">{{ strings.titles.spokenLanguages }}</h2>
+                <h2 class="section__title">{{ sections.spokenLanguages }}</h2>
                 <ul class="bulletlist">
                 {% for language in author.languages.type.spoken %}
                     <li class="p-skill">
@@ -56,7 +56,7 @@ layout: base
                 {% endfor %}
                 </ul>
                 <br/>
-                <h2 class="section__title">{{ strings.titles.programmingLanguages }}</h2>
+                <h2 class="section__title">{{ sections.programmingLanguages }}</h2>
                 {# <ul class="bulletlist"> #}
                     <a
                         class=""

@@ -6,7 +6,7 @@
             </a>
         {% endif %}
         {% if author.email %}
-            <a class="actions__btn has-tooltip" aria-label="{{ strings.labels.email }}" href="mailto:{{ author.email | obfuscate | safe }}">
+            <a class="actions__btn has-tooltip" aria-label="{{ labels.email }}" href="mailto:{{ author.email | obfuscate | safe }}">
                 {% icon "email" %}
             </a>
         {% endif %}
@@ -25,7 +25,7 @@
                 {% icon "twitter" %}
             </a>
         {% endif %}
-        <button class="actions__btn js-print utl-screen-only has-tooltip" aria-label="{{ strings.labels.print }}">
+        <button class="actions__btn js-print utl-screen-only has-tooltip" aria-label="{{ labels.print }}">
             {% icon "print" %}
         </button>
     </div>
