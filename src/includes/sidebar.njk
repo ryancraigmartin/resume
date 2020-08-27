@@ -1,30 +1,20 @@
 <aside class="l-sidebar">
     <div class="actions">
-        {% if author.website %}
-            <a class="actions__btn has-tooltip" aria-label="ryanmartin.io" href="{{ author.website }}">
+            <a class="actions__btn has-tooltip" aria-label="ryanmartin.io" href="{{ ryan.website }}">
                 {% icon "website" %}
             </a>
-        {% endif %}
-        {% if author.email %}
-            <a class="actions__btn has-tooltip" aria-label="{{ labels.email }}" href="mailto:{{ author.email | obfuscate | safe }}">
+            <a class="actions__btn has-tooltip" aria-label="{{ labels.email }}" href="mailto:{{ ryan.email | obfuscate | safe }}">
                 {% icon "email" %}
             </a>
-        {% endif %}
-        {% if author.social %}
-            <a class="actions__btn has-tooltip" aria-label="{{ author.social[0].name }}" href="{{ author.social[0].url }}">
+            <a class="actions__btn has-tooltip" aria-label="{{ ryan.social[0].name }}" href="{{ ryan.social[0].url }}">
                 {% icon "github" %}
             </a>
-        {% endif %}
-        {% if author.social %}
-            <a class="actions__btn has-tooltip" aria-label="{{ author.social[1].name }}" href="http://{{ author.social[1].url }}">
+            <a class="actions__btn has-tooltip" aria-label="{{ ryan.social[1].name }}" href="http://{{ ryan.social[1].url }}">
                 {% icon "linkedin" %}
             </a>
-        {% endif %}
-        {% if author.social %}
-            <a class="actions__btn has-tooltip" aria-label="{{ author.social[2].name }}" href="http://{{ author.social[2].url }}">
+            <a class="actions__btn has-tooltip" aria-label="{{ ryan.social[2].name }}" href="http://{{ ryan.social[2].url }}">
                 {% icon "twitter" %}
             </a>
-        {% endif %}
         <button class="actions__btn js-print utl-screen-only has-tooltip" aria-label="{{ labels.print }}">
             {% icon "print" %}
         </button>

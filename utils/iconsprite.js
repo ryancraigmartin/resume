@@ -8,6 +8,7 @@ const SVGSpriter = require('svg-sprite')
 const cwd = path.resolve('src/assets/icons')
 const spriteConfig = {
     mode: {
+        css: true,
         inline: true,
         symbol: {
             sprite: 'sprite.svg',

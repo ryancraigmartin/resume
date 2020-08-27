@@ -8,19 +8,20 @@
     "website": "https://ryanmartin.io",
     "skills": [
         "Node.js",
-        "React with Hooks",
         "Express.js",
         "MongoDB",
+        "React v16.8+: 'The One With Hooks'",
         "GraphQL & REST APIs",
         "Gatsby",
-        "Github & Gitlab",
         "Jest",
+        "Automated E2E & Integration Testing",
         "Cypress",
         "Mocha & Chai",
         "Cucumber & Gherkin",
-        "Automated E2E & Integration Testing",
+        "Github & Gitlab",
         "JIRA & Asana"
     ],
+
     "languages": {
         "type": {
             "spoken": [
@@ -35,19 +36,29 @@
             ],
             "programming": [
                 {
-                    "name": "HTML5"
+                    "name": "HTML5",
+                    "url": "https://www.w3schools.com/html/default.asp",
+                    "svg": "html"
                 },
                 {
-                    "name": "CSS3 & SCSS"
+                    "name": "CSS3 & SCSS",
+                    "url": "https://www.w3schools.com/css/default.asp",
+                    "svg": "css"
                 },
                 {
-                    "name": "Javascript / ES6+"
+                    "name": "JavaScript / ES6+",
+                    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+                    "svg": "javascript"
                 },
                 {
-                    "name": "TypeScript"
+                    "name": "TypeScript",
+                    "url": "https://www.typescriptlang.org/",
+                    "svg": "typescript"
                 },
                 {
-                    "name": "Golang"
+                    "name": "Golang",
+                    "url": "https://golang.org/",
+                    "svg": "golang"
                 }
             ]
         }

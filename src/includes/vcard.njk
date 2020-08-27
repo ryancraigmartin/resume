@@ -1,40 +1,40 @@
 <div class="vcard">
-    {% if author.avatar %}
-        {%- set avatarUrl -%}/assets/images/{{ author.avatar }}{% endset %}
-        <img class="vcard__avatar" src="{{ avatarUrl | base64file }}" width="350" height="350" alt="{{ author.name }}" />
+    {% if ryan.avatar %}
+        {%- set avatarUrl -%}/assets/images/{{ ryan.avatar }}{% endset %}
+        <img class="vcard__avatar" src="{{ avatarUrl | base64file }}" width="350" height="350" alt="{{ ryan.name }}" />
     {% endif %}
 
     <div class="vcard__content">
         <div class="vcard__title">
-            <h1 class="vcard__name">{{ author.name }}</h1>
+            <h1 class="vcard__name">{{ ryan.name }}</h1>
         </div>
         <p class="vcard__subtitle">
-            <span>{{ author.occupation }} from {{ author.location }}</span>
+            <span>{{ ryan.occupation }} from {{ ryan.location }}</span>
         </p>
 
         <div class="vcard__contact">
-            {% if author.email %}
-                <a class="vcard__link" aria-label="Email" href="mailto:{{ author.email | obfuscate | safe }}">
+            {% if ryan.email %}
+                <a class="vcard__link" aria-label="Email" href="mailto:{{ ryan.email | obfuscate | safe }}">
                     {% icon "email" %}
-                    <span class="vcard__link-text">{{ author.email | obfuscate | safe }}</span>
+                    <span class="vcard__link-text">{{ ryan.email | obfuscate | safe }}</span>
                 </a>
             {% endif %}
-            {% if author.telephone %}
-                <a class="vcard__link" aria-label="Telephone" href="tel:{{ author.telephone | stripSpaces }}">
+            {% if ryan.telephone %}
+                <a class="vcard__link" aria-label="Telephone" href="tel:{{ ryan.telephone | stripSpaces }}">
                     {% icon "telephone" %}
-                    <span class="vcard__link-text">{{ author.telephone }}</span>
+                    <span class="vcard__link-text">{{ ryan.telephone }}</span>
                 </a>
             {% endif %}
-            {% if author.website %}
-                <a class="vcard__link" aria-label="Website" href="{{ author.website }}">
+            {% if ryan.website %}
+                <a class="vcard__link" aria-label="Website" href="{{ ryan.website }}">
                     {% icon "laptop" %}
-                    <span class="vcard__link-text">{{ author.website | stripProtocol }}</span>
+                    <span class="vcard__link-text">{{ ryan.website | stripProtocol }}</span>
                 </a>
             {% endif %}
 
-            {% if author.social %}
+            {% if ryan.social %}
                 <div class="vcard__social">
-                    {% for social in author.social %}
+                    {% for social in ryan.social %}
                         <a class="vcard__link" href="{{ social.url }}" aria-label="{{ social.name }}" rel="me">
                             {%- set isSocialIcon = true -%}
                             {%- icon social.name, isSocialIcon -%}

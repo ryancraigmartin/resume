@@ -8,14 +8,23 @@
     pointer-events: none;
 }
 
-.languageIcon {
-    #icon-javascript {
-        height: 512px;
-        width: 512px;
+.languages {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    padding-right: 15px;
+
+    .icon--typescript
+    .icon--javascript {
+        padding-left: 5px;
+    }
+
+    .icon--golang {
+        padding-right: 5px;
+    }
+
+    svg {
+        height: 200%;
+        width: 200%;
     }
 }
-
-// #js {
-//     height: 100px;
-//     width: 100px;
-// }

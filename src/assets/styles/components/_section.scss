@@ -22,18 +22,9 @@
     }
 
     &__contact {
-        font-size: 1.5rem;
-        word-wrap: none;
         .markdown {
-            @include mq-down(lg) {
-                h2 {
-                    font-size: 1.7rem;
-                }
-            }
-            @include mq-down(md) {
-                h2 {
-                    font-size: 1.5rem;
-                }
+            h2 {
+                font-size: 1.5rem;
             }
         }
     }
