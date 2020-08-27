@@ -18,7 +18,7 @@ I was part of the Front-End/UX team working to bring the elegant designs of our 
 
 <br/>
 
-I am fascinated by the technologies that run the services and applications we interface with day to day and continue to stay up to date by teaching myself new technologies and best practices by using online resources including but not limited to [Lynda](https://www.lynda.com/), [Scrimba](https://scrimba.com/), [FreeCodeCamp](https://www.freecodecamp.org/), [FrontEndMasters](https://frontendmasters.com/), [Udemy](https://www.udemy.com/), [Egghead.io](https://egghead.io/) and [Youtube](https://www.youtube.com/).
+I am fascinated by the technologies that run the services and applications we interface with day to day and continue to stay up to date by teaching myself new skills and best practices by using online resources including but not limited to [Lynda](https://www.lynda.com/), [Scrimba](https://scrimba.com/), [FreeCodeCamp](https://www.freecodecamp.org/), [FrontEndMasters](https://frontendmasters.com/), [Udemy](https://www.udemy.com/), [Egghead.io](https://egghead.io/) and [Youtube](https://www.youtube.com/).
 
 <br/>
 

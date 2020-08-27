@@ -11,8 +11,8 @@
             width: 0.5em;
             height: 0.5em;
             border-radius: 50%;
-            background-color: $off-white;
-            background-color: var(--off-white, $off-white);
+            background-color: $secondary-color;
+            background-color: var(--$secondary-color, $secondary-color);
             transform: translate(-50%, 20%);
             position: absolute;
             top: 0.5em;

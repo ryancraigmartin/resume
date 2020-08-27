@@ -8,10 +8,10 @@
 
 $breakpoints: (
     sm: 375px,
-    smd: 412px,
     md: 670px,
     lg: 960px,
-    xl: 1260px
+    xl: 1260px,
+    xxl: 1440px
 );
 
 /// Creates media query for breakpoint and bigger

@@ -19,17 +19,23 @@
             transform: scale(1.1);
             transition: all 1s ease;
         }
+
+        @include mq-down(md) {
+            padding: 1rem .7rem;
+            margin-left: 3px;
+            margin-right: 10px;
+        }
     }
 
-    @include mq(lg) {
+    @include mq(xxl) {
         display: flex;
         flex-direction: column;
         position: fixed;
         top: 30%;
         left: 1.5%;
-        // padding: 0 .5rem;
         text-align: right;
         max-width: 100px;
+
         &__btn {
             margin: 0.5rem 0rem;
         }

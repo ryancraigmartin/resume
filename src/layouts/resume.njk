@@ -56,30 +56,30 @@ layout: base
                 {% endfor %}
                 </ul>
                 <br/>
-                <h2 class="section__title">{{ sections.programmingLanguages }}</h2>
-                {# <ul class="bulletlist"> #}
+                <h2 class="section__title">
+                    {{ sections.programmingLanguages }}
+                </h2>
                     <a
-                        class=""
-                        aria-label="{{ author.website }}"
-                        href="{{ author.website }}">
-                        {% icon "js" %}
+                        class="languageIcon"
+                        aria-label="JavaScript"
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                    >
+                        {% icon "javascript" %}
                     </a>
                     <a
-                        class=""
-                        aria-label="{{ author.website }}"
-                        href="{{ author.website }}">
-                        {% icon "ts" %}
+                        class="languageIcon"
+                        aria-label="TypeScript"
+                        href="https://www.typescriptlang.org/"
+                    >
+                        {% icon "typescript" %}
                     </a>
                     <a
-                        class=""
-                        aria-label="{{ author.website }}"
-                        href="{{ author.website }}">
-                        {% icon "js" %}
+                        class="languageIcon"
+                        aria-label="Golang"
+                        href="https://golang.org/"
+                    >
+                        {% icon "golang" %}
                     </a>
-                {# {% for language in author.languages.type.programming %}
-                    <li class="p-skill">{{ language.name }}</li>
-                {% endfor %} #}
-                {# </ul> #}
             </section>
             {% endif %}
         </div>

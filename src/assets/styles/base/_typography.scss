@@ -52,11 +52,11 @@ a {
     // }
 }
 
-.lead {
-    font-size: 1rem;
-    line-height: 1.5;
-    max-width: 120ch;
-    @include mq(md) {
-        font-size: 1rem;
-    }
-}
+// .lead {
+//     font-size: 1.5rem;
+//     line-height: 1.5;
+//     max-width: 100ch;
+//     @include mq-down(xxl) {
+//         font-size: 1rem;
+//     }
+// }

@@ -8,11 +8,11 @@
         <div class="vcard__title">
             <h1 class="vcard__name">{{ author.name }}</h1>
         </div>
-        <p class="vcard__subtitle lead">
+        <p class="vcard__subtitle">
             <span>{{ author.occupation }} from {{ author.location }}</span>
         </p>
 
-        <div class="vcard__contact p-contact">
+        <div class="vcard__contact">
             {% if author.email %}
                 <a class="vcard__link" aria-label="Email" href="mailto:{{ author.email | obfuscate | safe }}">
                     {% icon "email" %}

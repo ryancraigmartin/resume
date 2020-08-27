@@ -9,15 +9,15 @@ title: Contact 📬
 
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-Send ✉️ &nbsp;to <ryan@ryanmartin.io> or
+Send ✉️ to <strong>ryan@ryanmartin.io</strong> or
 <a
-  onclick="Calendly.initPopupWidget({url: "https://calendly.com/ryancraigmartin"})">
-  schedule a time for us to chat on my calendar 📆
+  onclick="Calendly.initPopupWidget({url: "https://calendly.com/ryancraigmartin"})>
+  schedule a time for us to chat on my calendar. 📆
 </a>
 
 <!-- TODO: use inline widget once calendly's embed issues are fixed -->
-&ensp;
 
+&ensp;
 
 <!-- <div
       class="calendly-inline-widget"
@@ -28,4 +28,3 @@ Send ✉️ &nbsp;to <ryan@ryanmartin.io> or
       src="https://assets.calendly.com/assets/external/widget.js">
     </script>
 </div> -->
-
