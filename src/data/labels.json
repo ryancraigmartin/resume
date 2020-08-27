@@ -1,7 +1,6 @@
 {
-
-    "email": "Email",
-    "telephone": "Phone",
-    "print": "Print Résumé",
-    "present": "Present"
+  "email": "Email",
+  "telephone": "Phone",
+  "print": "Print Résumé",
+  "present": "Present"
 }

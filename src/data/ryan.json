@@ -1,84 +1,84 @@
 {
-    "name": "Ryan Craig Martin",
-    "occupation": "Software / QA Engineer",
-    "location": "Miami, FL",
-    "avatar": "avatar.jpg",
-    "email": "ryan@ryanmartin.io",
-    "telephone": "305-791-3262",
-    "website": "https://ryanmartin.io",
-    "skills": [
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "React v16.8+: 'The One With Hooks'",
-        "GraphQL & REST APIs",
-        "Gatsby",
-        "Jest",
-        "Automated E2E & Integration Testing",
-        "Cypress",
-        "Mocha & Chai",
-        "Cucumber & Gherkin",
-        "Github & Gitlab",
-        "JIRA & Asana"
-    ],
+  "name": "Ryan Craig Martin",
+  "occupation": "Software / QA Engineer",
+  "location": "Miami, FL",
+  "avatar": "avatar.jpg",
+  "email": "ryan@ryanmartin.io",
+  "telephone": "305-791-3262",
+  "website": "https://ryanmartin.io",
+  "skills": [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "React v16.8+: 'The One With Hooks'",
+    "GraphQL & REST APIs",
+    "Gatsby",
+    "Jest",
+    "Automated E2E & Integration Testing",
+    "Cypress",
+    "Mocha & Chai",
+    "Cucumber & Gherkin",
+    "Github & Gitlab",
+    "JIRA & Asana"
+  ],
 
-    "languages": {
-        "type": {
-            "spoken": [
-                {
-                    "name": "English",
-                    "level": "Native Speaker"
-                },
-                {
-                    "name": "Spanish",
-                    "level": "Intermediate"
-                }
-            ],
-            "programming": [
-                {
-                    "name": "HTML5",
-                    "url": "https://www.w3schools.com/html/default.asp",
-                    "svg": "html"
-                },
-                {
-                    "name": "CSS3 & SCSS",
-                    "url": "https://www.w3schools.com/css/default.asp",
-                    "svg": "css"
-                },
-                {
-                    "name": "JavaScript / ES6+",
-                    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-                    "svg": "javascript"
-                },
-                {
-                    "name": "TypeScript",
-                    "url": "https://www.typescriptlang.org/",
-                    "svg": "typescript"
-                },
-                {
-                    "name": "Golang",
-                    "url": "https://golang.org/",
-                    "svg": "golang"
-                }
-            ]
+  "languages": {
+    "type": {
+      "spoken": [
+        {
+          "name": "English",
+          "level": "Native Speaker"
+        },
+        {
+          "name": "Spanish",
+          "level": "Intermediate"
         }
+      ],
+      "programming": [
+        {
+          "name": "HTML5",
+          "url": "https://www.w3schools.com/html/default.asp",
+          "svg": "html"
+        },
+        {
+          "name": "CSS3 & SCSS",
+          "url": "https://www.w3schools.com/css/default.asp",
+          "svg": "css"
+        },
+        {
+          "name": "JavaScript / ES6+",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          "svg": "javascript"
+        },
+        {
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org/",
+          "svg": "typescript"
+        },
+        {
+          "name": "Golang",
+          "url": "https://golang.org/",
+          "svg": "golang"
+        }
+      ]
+    }
+  },
+
+  "social": [
+    {
+      "name": "Github",
+      "user": "@ryancraigmartin",
+      "url": "https://github.com/ryancraigmartin/"
     },
-
-    "social": [
-        {
-            "name": "Github",
-            "user": "@ryancraigmartin",
-            "url": "https://github.com/ryancraigmartin/"
-        },
-        {
-            "name": "LinkedIn",
-            "user": "/in/ryancraigmartin",
-            "url": "https://linkedin.com/in/ryancraigmartin/"
-        },
-        {
-            "name": "Twitter",
-            "user": "@ryancraigmartin",
-            "url": "https://twitter.com/ryancraigmartin/"
-        }
-    ]
+    {
+      "name": "LinkedIn",
+      "user": "/in/ryancraigmartin",
+      "url": "https://linkedin.com/in/ryancraigmartin/"
+    },
+    {
+      "name": "Twitter",
+      "user": "@ryancraigmartin",
+      "url": "https://twitter.com/ryancraigmartin/"
+    }
+  ]
 }

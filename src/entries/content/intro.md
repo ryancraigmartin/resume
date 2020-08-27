@@ -1,7 +1,8 @@
 ---
-tags: introduction
+tags: intro
 title: About
 ---
+
 I'm a 26 year old software engineer from Miami, Florida where I earned a Bachelor of Science in Information Technology from [Florida International University](https://www.cis.fiu.edu/).
 
 <br/>

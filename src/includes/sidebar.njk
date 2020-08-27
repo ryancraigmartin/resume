@@ -3,21 +3,27 @@
             <a class="actions__btn has-tooltip" aria-label="ryanmartin.io" href="{{ ryan.website }}">
                 {% icon "website" %}
             </a>
+
             <a class="actions__btn has-tooltip" aria-label="{{ labels.email }}" href="mailto:{{ ryan.email | obfuscate | safe }}">
                 {% icon "email" %}
             </a>
-            <a class="actions__btn has-tooltip" aria-label="{{ ryan.social[0].name }}" href="{{ ryan.social[0].url }}">
-                {% icon "github" %}
-            </a>
-            <a class="actions__btn has-tooltip" aria-label="{{ ryan.social[1].name }}" href="http://{{ ryan.social[1].url }}">
-                {% icon "linkedin" %}
-            </a>
-            <a class="actions__btn has-tooltip" aria-label="{{ ryan.social[2].name }}" href="http://{{ ryan.social[2].url }}">
-                {% icon "twitter" %}
-            </a>
-        <button class="actions__btn js-print utl-screen-only has-tooltip" aria-label="{{ labels.print }}">
+
+            {% for icon in ryan.social %}
+                <a
+                    class="actions__btn has-tooltip"
+                    aria-label="{{icon.name}}"
+                    href="{{icon.url}}"
+                >
+                    <svg class="icon icon--{{icon.name | lower}}" role="img" aria-hidden="true" width="24" height="24">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-{{icon.name | lower}}">
+                        </use>
+                    </svg>
+                </a>
+            {% endfor %}
+            {# TODO: FIX PRINT STYLES #}
+        {# <button class="actions__btn js-print utl-screen-only has-tooltip" aria-label="{{ labels.print }}">
             {% icon "print" %}
-        </button>
+        </button> #}
     </div>
 </aside>
 

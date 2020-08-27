@@ -4,9 +4,9 @@ layout: base
 
 <main class="main container">
     {% include "header.njk" %}
-        {% if collections.introduction.length %}
-            {% set intro = collections.introduction|first %}
-            <section class="section" id="section-introduction">
+        {% if collections.intro.length %}
+            {% set intro = collections.intro|first %}
+            <section class="section" id="section-intro">
                 <h2 class="section__title">{{ sections.about }}</h2>
                 <div class="lead">
                     {{ intro.templateContent | safe }}

@@ -1,29 +1,29 @@
 .markdown {
-    text-align: center;
+  text-align: center;
 
-    a {
-        @include hyphenate;
-    }
+  a {
+    @include hyphenate;
+  }
 
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
-    ul {
-        @extend .bulletlist;
-    }
+  ul {
+    @extend .bulletlist;
+  }
 
-    ol {
-        list-style-type: decimal;
-        padding-left: 1.375rem;
-    }
+  ol {
+    list-style-type: decimal;
+    padding-left: 1.375rem;
+  }
 
-    > * + * {
-        margin-top: 0.5rem;
-    }
+  > * + * {
+    margin-top: 0.5rem;
+  }
 
-    .calendly-inline-widget {
-        margin-bottom: 3%;
-    }
+  .calendly-inline-widget {
+    margin-bottom: 3%;
+  }
 }
