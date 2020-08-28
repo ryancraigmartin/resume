@@ -1,6 +1,6 @@
 ---
 tags: custom
-title: Contact 📬
+title: Contact
 ---
 
 ## I am currently looking for my next opportunity!

@@ -44,8 +44,18 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 10px;
     background-color: $primary-color;
+
+    // img {
+    //   margin-top: -40px;
+    //   justify-content: center;
+    //   @include mq-down(md) {
+    //     padding: 1%;
+    //     margin-left: 130px;
+    //     justify-content: center;
+    //   }
+    // }
 
     a {
       color: $gray-dark;

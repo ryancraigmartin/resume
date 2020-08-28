@@ -1,5 +1,5 @@
 ---
-title: Full Stack Web Development ⚛️
+title: Full Stack Web Development
 organization: Ironhack
 location: Miami, Florida
 start: 2018-04-12

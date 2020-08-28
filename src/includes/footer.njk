@@ -1,8 +1,12 @@
 <footer class="footer">
-        <a href='https://ryanmartin.io'>
-            <p>&copy; {{ ryan.name }}</p>
-        </a>
-        <p>
-            Last updated on {{ build.timestamp | dateToFormat('DDDD') }}
-        </p>
+    <a alt="{{ ryan.name }}" href='https://ryanmartin.io'>
+        <p>&copy; {{ ryan.name }}</p>
+    </a>
+{# {% if ryan.logo %}
+    {%- set logo -%}/assets/images/{{ ryan.logo }}{% endset %}
+    <a href="{{ ryan.website }}"><img src="{{ logo | base64file }}" width="125" height="125" alt="{{ ryan.name }}" /></a>
+{% endif %} #}
+    <p>
+        Last updated on {{ build.timestamp | dateToFormat('DDDD') }}
+    </p>
 </footer>
