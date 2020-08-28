@@ -3,52 +3,76 @@ layout: base
 ---
 
 <main class="main container">
-
-        {% if collections.introduction.length %}
-            {% set intro = collections.introduction|first %}
-            <section class="section" id="section-introduction">
-                <h2 class="section__title">{{ intro.data.title }}</h2>
-                <div class="lead p-summary">
+    {% include "header.njk" %}
+        {% if collections.intro.length %}
+            {% set intro = collections.intro|first %}
+            <section class="section" id="section-intro">
+                <h2 class="section__title">{{ sections.about }}</h2>
+                <div class="lead">
                     {{ intro.templateContent | safe }}
                 </div>
             </section>
         {% endif %}
 
         <section class="section" id="section-experience">
-            <h2 class="section__title">{{ strings.titles.experience }}</h2>
+            <h2 class="section__title">{{ sections.experience }}</h2>
             {% set entries = collections.work %}
             {% set microformat = "p-experience" %}
             {% include "entrylist.njk" %}
         </section>
 
         <section class="section" id="section-education">
-            <h2 class="section__title">{{ strings.titles.education }}</h2>
+            <h2 class="section__title">{{ sections.education }}</h2>
             {% set entries = collections.education %}
             {% set microformat = "p-education" %}
             {% include "entrylist.njk" %}
         </section>
 
-    {% if author.skills or author.languages %}
+    {% if ryan.skills or ryan.languages %}
         <div class="grid grid--2col">
-            {% if author.skills %}
+            {% if ryan.skills %}
             <section class="section section--half" id="section-skills">
-                <h2 class="section__title">{{ strings.titles.skills }}</h2>
-                <ul class="bulletlist">
-                {% for skill in author.skills %}
-                    <li class="p-skill">{{ skill }}</li>
-                {% endfor %}
-                </ul>
+                <h2 class="section__title">{{ sections.skills }}</h2>
+                    <div class="section__skills">
+                        <ul class="bulletlist">
+                            {% for skill in ryan.skills %}
+                                <li class="p-skill">
+                                    {{ skill }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
             </section>
             {% endif %}
 
-            {% if author.languages %}
+            {% if ryan.languages %}
             <section class="section section--half" id="section-languages">
-                <h2 class="section__title">{{ strings.titles.languages }}</h2>
+                <h2 class="section__title">{{ sections.spokenLanguages }}</h2>
                 <ul class="bulletlist">
-                {% for language in author.languages %}
-                    <li class="p-skill">{{ language.name }} ({{ language.level }})</li>
+                {% for language in ryan.languages.type.spoken %}
+                    <li class="p-skill">
+                        {{ language.name }} - <em>{{ language.level }}</em>
+                    </li>
                 {% endfor %}
                 </ul>
+                <br/>
+                <h2 class="section__title">
+                    {{ sections.programmingLanguages }}
+                </h2>
+                    <div class="languages">
+                        {% for lang in ryan.languages.type.programming %}
+                            <a
+                                class="languageIcon"
+                                aria-label="{{lang.name}}"
+                                href="{{lang.url}}"
+                            >
+                                <svg class="icon icon--{{lang.svg}}" role="img" aria-hidden="true" width="24" height="24">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-{{lang.svg}}">
+                                    </use>
+                                </svg>
+                            </a>
+                        {% endfor %}
+                    </div>
             </section>
             {% endif %}
         </div>
@@ -56,7 +80,7 @@ layout: base
 
     {% if collections.custom.length %}
         {% set custom = collections.custom|first %}
-        <section class="section" id="section-custom">
+        <section class="section__contact">
             {% if custom.data.title %}
                 <h2 class="section__title">{{ custom.data.title }}</h2>
             {% endif %}

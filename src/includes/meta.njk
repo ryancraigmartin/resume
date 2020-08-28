@@ -1,6 +1,6 @@
 {%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(meta.url) }}{%- endset -%}
-{%- set pageTitle -%}{{ author.name }}{% if author.occupation %} - {{ author.occupation }}{% endif %}{% if author.location %} in {{ author.location }}{% endif %}{%- endset -%}
-{%- set pageDescription -%}Online Resume of {{ author.name }}{%- endset -%}
+{%- set pageTitle -%}{{ ryan.name }}{% if ryan.occupation %} - {{ ryan.occupation }}{% endif %}{% if ryan.location %} in {{ ryan.location }}{% endif %}{%- endset -%}
+{%- set pageDescription -%}Online Resume of {{ ryan.name }}{%- endset -%}
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +17,8 @@
 <meta property="og:url" content="{{ absolutePageUrl }}">
 <meta property="og:locale" content="{{ meta.locale }}">
 <meta name="twitter:card" content="summary">
-{%- if author.avatar -%}
-    {%- set avatarUrl -%}/assets/images/{{ author.avatar }}{% endset %}
+{%- if ryan.avatar -%}
+    {%- set avatarUrl -%}/assets/images/{{ ryan.avatar }}{% endset %}
     <meta property="og:image" content="{{ avatarUrl | url | absoluteUrl(meta.url) }}">
 {%- endif -%}
 
@@ -36,21 +36,23 @@
 {# JSON LD #}
 <script type="application/ld+json">
     {
-        "name":"{{ author.name }}",
-        "description":"{{ author.occupation }}{% if author.location %} in {{ author.location }}{% endif %}",
+        "name":"{{ ryan.name }}",
+        "description":"{{ ryan.occupation }}{% if ryan.location %} in {{ ryan.location }}{% endif %}",
         "author": {
             "@type":"Person",
-            "name":"{{ author.name }}"
+            "name":"{{ ryan.name }}"
         },
         "@type":"WebSite",
         "url":"{{ meta.url }}",
-        "image":"{{ meta.url }}/assets/images/{{ author.avatar }}",
-        "headline":"{{ author.name }}",
+        "image":"{{ meta.url }}/assets/images/{{ ryan.avatar }}",
+        "headline":"{{ ryan.name }}",
         "sameAs":[
-            {%- for social in author.social -%}
+            {%- for social in ryan.social -%}
                 "{{ social.url }}"{%- if not loop.last -%},{%- endif -%}
             {%- endfor -%}
         ],
         "@context":"http://schema.org"
     }
 </script>
+{# <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script> #}

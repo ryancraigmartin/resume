@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<!-- Checking out the code? It's open source: https://github.com/ryancraigmartin/resume -->
 <html class="no-js" lang="{{ meta.lang }}">
 <head>
     {% include "meta.njk" %}
+    <link rel="preload" href="{{ '/assets/fonts/butler-medium.woff' | url }}" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="{{ '/assets/fonts/butler-medium.woff2' | url }}" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="{{ '/assets/styles/main.css' | url }}">
 </head>
@@ -9,13 +11,12 @@
     <div data-icon-sprite hidden>{% iconsprite %}</div>
 
     <div class="layout h-resume" role="document">
-        {% include "header.njk" %}
         {{ content | safe }}
         {% include "sidebar.njk" %}
         {% include "footer.njk" %}
     </div>
 
     <script type="text/javascript" src="{{ '/assets/scripts/main.js' | url }}"></script>
-    <!--! LAST BUILD: {{ build.env}} {{ build.timestamp | dateToISO }} -->
+    <!-- LAST BUILD: {{ build.env}} {{ build.timestamp | dateToISO }} -->
 </body>
 </html>

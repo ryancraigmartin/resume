@@ -1,23 +1,23 @@
 <article class="entry">
     <div class="entry__header">
         <h3 class="entry__title p-name">{{ entry.data.title }}</h3>
-        
+
         <p class="entry__time">
-            <time class="dt-start" datetime="{{ entry.data.start | dateToFormat("yyyy-MM-dd") }}">
-                {{ entry.data.start | dateToFormat("MM/yyyy") }}
+            <time class="dt-start" datetime="{{ entry.data.start | dateToFormat("MMMM yyyy") }}">
+                {{ entry.data.start | dateToFormat("MMMM yyyy") }}
             </time>
             <span>&ndash;</span>
             {% if entry.data.end %}
-                <time class="dt-end" datetime="{{ entry.data.end | dateToFormat("yyyy-MM-dd") }}">
-                    {{ entry.data.end | dateToFormat("MM/yyyy") }}
+                <time class="dt-end" datetime="{{ entry.data.end | dateToFormat("MMMM yyyy") }}">
+                    {{ entry.data.end | dateToFormat("MMMM yyyy") }}
                 </time>
             {% else %}
-                <span>{{ strings.labels.present }}</span>
+                <span>{{ labels.present }}</span>
             {% endif %}
         </p>
 
         {% if entry.data.organization %}
-            <p class="entry__organization p-org h-card">
+            <p class="entry__organization p-org">
                 {% if entry.data.organizationUrl %}
                     <a href="{{ entry.data.organizationUrl }}" class="p-name u-url" target="_blank" rel="noopener noreferrer">{{ entry.data.organization }}</a>
                 {% else %}
@@ -32,7 +32,7 @@
     </div>
 
     {% if entry.templateContent %}
-        <div class="entry__content p-summary">
+        <div class="entry__content">
             {{ entry.templateContent | safe }}
         </div>
     {% endif %}

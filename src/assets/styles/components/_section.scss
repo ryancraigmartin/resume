@@ -1,21 +1,41 @@
 .section {
-    padding-top: $spacing-y;
-    padding-bottom: $spacing-y;
-    page-break-inside: avoid;
+  padding-top: $spacing-y - 100;
+  padding-bottom: $spacing-y;
+  page-break-inside: avoid;
 
-    &__title {
-        margin-bottom: $spacing-y;
-        padding-bottom: 0.5rem;
-        border-bottom: 1px solid $gray;
+  &__title {
+    margin-bottom: $spacing-y;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $gray;
+
+    @include mq-down(md) {
+      font-size: 1.5rem;
     }
+  }
+
+  &__skills {
+    display: flex;
+    max-height: 400px;
+    max-width: 400px;
+    padding-left: $spacing-y - 100;
+    padding-right: $spacing-y - 100;
+  }
+
+  &__contact {
+    .markdown {
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
 
 .grid .section {
-    grid-column: span 2;
+  grid-column: span 2;
 
-    @include mq(md, true) {
-        &--half {
-            grid-column: span 1;
-        }
+  @include mq(md, true) {
+    &--half {
+      grid-column: span 1;
     }
+  }
 }
