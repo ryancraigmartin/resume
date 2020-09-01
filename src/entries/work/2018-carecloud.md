@@ -11,7 +11,7 @@ end: 2019-09-01
 
 - Trained co-workers on the Automation team to write tests using Jest and increased overall test coverage for our micro-services.
 
-- Wrote automated, end to end test suites for behavior-driven development using CircleCi, Selenium, WebDriverIO, Cucumber, Gherkin, Mocha, and Chai for .
+- Wrote automated, behavior-driven, end to end test suites for using CircleCi, Selenium, WebDriverIO, Cucumber, Gherkin, Mocha, and Chai for .
 
 ```
   - Atlassian Jira for Scrum and Kanban
