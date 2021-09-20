@@ -3,7 +3,7 @@ tags: custom
 title: Contact
 ---
 
-## I am currently looking for my next opportunity!
+<!-- ## I am currently looking for my next opportunity! -->
 
 &ensp;
 
